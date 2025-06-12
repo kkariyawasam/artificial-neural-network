@@ -30,8 +30,6 @@ This project uses an **Artificial Neural Network (ANN)** to predict customer chu
 - **Target**:
   - `Exited`: 1 (churned), 0 (retained)
 
-> Note: The dataset is not included in the repo due to licensing. You can find it [here](https://www.kaggle.com/datasets/shubhendra7/customer-churn-prediction)
-
 ---
 
 ## 📌 Workflow
