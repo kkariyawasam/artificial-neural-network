@@ -1,70 +1,87 @@
-# 🧠 Customer Churn Prediction using ANN
 
-This project uses an **Artificial Neural Network (ANN)** to predict customer churn based on structured data from a bank's customer base. It demonstrates data preprocessing, model building using TensorFlow/Keras, and evaluation techniques like confusion matrix and accuracy scores.
+# 🧠 Customer Behavior Prediction Projects using ANN
 
----
-
-## 🚀 Project Goals
-
-- Predict if a customer will **leave the bank (churn)**.
-- Build a neural network model using TensorFlow/Keras.
-- Evaluate performance using metrics and visualizations.
+This repository contains two machine learning projects that utilize **Artificial Neural Networks (ANNs)** to model customer behavior. Both projects involve data preprocessing, ANN model construction using **TensorFlow/Keras**, and performance evaluation through relevant metrics and visualizations.
 
 ---
 
-## 🧰 Tech Stack
+## 🚗 Project 1: Car Purchase Amount Prediction
 
-- **Python**
-- **Jupyter Notebook**
-- **Pandas**, **NumPy**, **Matplotlib**, **Seaborn**
-- **Scikit-learn**
-- **TensorFlow / Keras**
+### 🎯 Objective  
+Develop a regression model using an ANN to **predict the total dollar amount a customer is willing to pay for a car** based on their personal and demographic information.
 
----
+### 📄 Dataset  
+- Contains features such as **Gender, Age, Annual Salary, Credit Card Debt**, and **Net Worth**.
+- Target variable: **Car Purchase Amount** (continuous value).
 
-## 📊 Dataset
-
-- **Source**: `Churn_Modelling.csv`
-- **Features**:
-  - CustomerID, Geography, Gender, Age, Tenure, Balance, etc.
-- **Target**:
-  - `Exited`: 1 (churned), 0 (retained)
-
----
-
-## 📌 Workflow
-
+### 🧰 Workflow  
 1. **Data Preprocessing**
-
-   - Encoding categorical variables
+   - Handling numerical and categorical features
    - Feature scaling
-   - Splitting train and test sets
+   - Train-test split
 
 2. **Model Building**
-
-   - 3-layer ANN with ReLU and Sigmoid activations
+   - ANN with multiple dense layers
+   - Activation functions: ReLU (hidden layers), Linear (output)
+   - Loss: Mean Squared Error (MSE)
    - Optimizer: Adam
-   - Loss: Binary Crossentropy
 
-3. **Model Evaluation**
-   - Confusion Matrix
-   - Accuracy Score
-   - Visualization of training loss and accuracy
+3. **Evaluation**
+   - Loss and MAE metrics
+   - Visualizations: Training/validation loss plots
+
+### ✅ Outcome  
+- Successfully trained a regression ANN model.
+- Able to predict car purchase amounts with reasonable accuracy.
+- Learned how ANNs handle continuous output prediction.
 
 ---
 
-## 📈 Output
+## 🔁 Project 2: Customer Churn Prediction
 
-- **Accuracy**: ~86%
-- **Confusion Matrix**: Displayed using seaborn heatmap
-- **Visuals**: Training/validation accuracy and loss plots
+### 🎯 Objective  
+Use ANN to **predict whether a customer will leave the bank (churn)** using structured customer data.
+
+### 📄 Dataset  
+- Source: `Churn_Modelling.csv`
+- Features: **Geography, Gender, Age, Tenure, Balance, Estimated Salary**, etc.
+- Target variable: `Exited` (1 = churned, 0 = retained)
+
+### 🧰 Workflow  
+1. **Data Preprocessing**
+   - Label encoding and one-hot encoding
+   - Feature scaling
+   - Train-test split
+
+2. **Model Building**
+   - ANN with 3 layers
+   - Activation functions: ReLU (hidden layers), Sigmoid (output)
+   - Loss: Binary Crossentropy
+   - Optimizer: Adam
+
+3. **Evaluation**
+   - Accuracy Score
+   - Confusion Matrix
+   - Visualizations: Accuracy and loss trends
+
+### ✅ Outcome  
+- **Model Accuracy**: ~86%
+- Visual understanding of training performance
+- Clear insight into the bank’s churn patterns
+
+---
+
+## 🧰 Common Tech Stack
+
+- Python, Jupyter Notebook  
+- Pandas, NumPy, Matplotlib, Seaborn  
+- Scikit-learn  
+- TensorFlow / Keras  
 
 ---
 
 ## 🧠 Learnings
 
-- Built a neural network from scratch using Keras.
-- Understood model performance via confusion matrix.
-- Learned to preprocess real-world structured data.
-
----
+- Gained hands-on experience in building and evaluating ANN models.
+- Understood differences between regression and classification use-cases with neural networks.
+- Practiced real-world data preprocessing and visualization techniques.
